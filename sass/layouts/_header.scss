@@ -1,0 +1,188 @@
+.myNavbar {
+    box-shadow: 0 0 1px 1px $color-black-1, 0 0 1px 1px $color-black-1;
+
+    .collapse__header{
+        width: 5%;
+        margin: 0 auto;
+    }
+
+    .myNavbar__left {
+        display: flex;
+        align-items: center;
+
+        .navbar-brand {
+            flex-grow: 1;
+            text-align: center;
+            margin-right: 0;
+
+            img {
+                width: 110px;
+            }
+
+            .logo-white{
+                display: none;
+            }
+        }
+
+        .navLeft__category {
+            flex-grow: 1;
+            text-align: center;
+            cursor: pointer;
+            @include styleText($color-black-light, $fs-1, $fw-0);
+
+            i {
+                color: $color-gray-3;
+            }
+        }
+
+        .navLeft__search {
+            flex-grow: 8;
+
+            @include styleFromSearch($color-white-cream, $color-white-0, $color-gray-4, $color-black-light);
+        }
+    }
+
+    .myNavbar__right {
+        .navbar-nav {
+            justify-content: space-around;
+            align-items: center;
+
+            .nav-item {
+                padding: $pd-2 + 2 $pd-2;
+                border-radius: $border-radius + 1;
+                position: relative;
+
+                .nav-link {
+                    @include styleText($color-black-light, $fs-1, $fw-0);
+                }
+
+                &:hover {
+                    background-color: $color-gray-1;
+
+                    .overlay {
+                        display: block;
+                    }
+                }
+
+                .overlay {
+                    display: none;
+                    background-color: $color-white-0;
+                    width: 330px;
+                    padding: $pd-3;
+                    text-align: center;
+                    box-shadow: 0 4px 16px $color-gray-5;
+                    position: absolute;
+                    top: 60px;
+                    right: 0;
+                    z-index: 2;
+                    border-top: 1px solid $color-gray-1;
+
+                    &::before {
+                        z-index: 3;
+                        position: absolute;
+                        top: -8px;
+                        right: 10%;
+                        display: block;
+                        content: '';
+                        width: 15px;
+                        height: 15px;
+                        background-color: $color-white-0;
+                        transform: rotate(45deg);
+                        border-top: 1px solid $color-gray-1;
+                        border-left: 1px solid $color-gray-1;
+                    }
+                }
+            }
+
+            .myNavbar__cart {
+                width: 50px;
+                height: 50px;
+                line-height: 20px;
+                border-radius: 50%;
+
+                .nav-link {
+                    font-size: $fs-3 + 2;
+                }
+            }
+
+            .myNavbar__button {
+                display: flex;
+
+                &:hover {
+                    background-color: transparent;
+                }
+
+                .button--white {
+                    margin-right: $mg-0;
+                }
+
+                .button {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) and (max-width: 1375px) {
+        .myNavbar__right {
+            .navbar-nav {
+                .nav-item {
+                    text-align: center;
+                    white-space: nowrap;
+                    .nav-link{
+                        font-size: $fs-1 - 1;
+                    }
+
+                    .overlay{
+                        white-space: normal;
+                    }
+                }
+                .myNavbar__button{
+                    padding-right: 10px;
+                }
+            }
+        }
+        .myNavbar--reset{
+            padding-left: 0;
+        }
+    }
+
+    @include responsive("extra-large") {
+
+        .business, .instructor {
+            display: none;
+        }
+
+        .myNavbar--reset{
+            width: 26%;
+        }
+    }
+
+    @include responsive("large") {
+        justify-content: center;
+    }
+
+    @include responsive("medium") {
+        .myNavbar__left{
+            .navLeft__category, .navLeft__search{
+                display: none;
+            }
+        }
+
+        .myNavbar--reset{
+            width: 18%;
+        }
+
+        .myNavbar__right{
+            width: 50%;
+            margin-left: auto;
+            .navbar-nav{
+                text-align: center;
+                .myNavbar__button{
+                    display: none;
+                }
+            }
+        }
+    }
+
+}

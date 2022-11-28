@@ -1,0 +1,91 @@
+// // ko co tham so
+// @mixin styleText{
+//     color: white;
+//     font-size: 13px;
+// }
+
+@mixin styleText($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin styleButton($color, $bg-color, $border, $fs, $fw, $pd-y, $pd-x) {
+    color: $color;
+    background-color: $bg-color;
+    border: 1px solid $border;
+    font-size: $fs;
+    font-weight: $fw;
+    padding: $pd-y $pd-x;
+    cursor: pointer;
+}
+
+@mixin hoverButton($color, $bg-color, $border) {
+    color: $color;
+    background-color: $bg-color;
+    border: 1px solid $border;
+}
+
+@mixin styleFromSearch($bg-color, $bg-color-focus, $border-color, $color){
+    .input-group {
+        background: $bg-color;
+
+        .form-control {
+            background-color: transparent;
+            border-color: transparent;
+            box-shadow: none;
+            transition: none;
+            color: $color;
+
+            &::placeholder {
+                color: $color;
+            }
+
+            &:focus {
+                background-color: $bg-color-focus;
+                border-top-color: $border-color;
+                border-bottom-color: $border-color;
+                border-left-color: $border-color;
+            }
+
+            &:focus+.input-group-text {
+                background-color: $border-color;
+                border-top-color: $border-color;
+                border-bottom-color: $border-color;
+                border-right-color: $border-color;
+                color: $color-red-0;
+
+
+                // &: parent selector
+                &:hover {
+                    color: $color-white-0;
+                    background-color: $color-red-0;
+                }
+            }
+        }
+
+        .input-group-text {
+            border-color: transparent;
+            background-color: transparent;
+            color: $color-red-0;
+
+            // &: parent selector
+            &:hover {
+                color: $color-white-0;
+                background-color: $color-red-0;
+            }
+        }
+    }
+}
+
+@mixin responsive($screen){
+    @if map-has-key($map: $breakpoints, $key: $screen){
+        $value: map-get($map: $breakpoints, $key: $screen);
+        @media screen and (max-width: $value){
+                @content;
+        }   
+    }
+    @else{
+        @warn"`{$screen}` isn't valid";
+    }   
+}

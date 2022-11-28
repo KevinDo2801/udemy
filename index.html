@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONT GOOGLE -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- BS5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- SIDE BAR MINI -->
+    <div class="sidebarMini">
+        <button class="sidebarMini__button">
+            <i class="fa fa-cog"></i>
+        </button>
+        <div class="sidebarMini__content">
+            <h2>Dank Mode</h2>
+            <div class="d-flex">
+                <span>Off</span>
+                <label for="checkbox" class="switch">
+                    <input type="checkbox" name="" id="checkbox">
+                    <div class="slider"></div>
+                </label>
+                <span>On</span>
+            </div>
+        </div>
+    </div>
+    <!-- HEADER -->
+    <header>
+        <nav class="myNavbar navbar navbar-expand-md navbar-light">
+            <div class="d-md-none col-sm-2 collapse__header ms-3">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="col-xl-7 col-lg-9 col-md-8 col-6 col-sm-8">
+                <div class="myNavbar__left">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo-black" src="./img/logo-coral.svg" alt="logo-coral">
+                        <img class="logo-white" src="./img/logo-coral-white.svg" alt="logo-coral">
+                    </a>
+                    <div class="navLeft__category">
+                        <i class="fa fa-th"></i>
+                        <span>Categories</span>
+                    </div>
+                    <form class="navLeft__search me-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for courses">
+                            <span class="input-group-text" id="basic-addon2">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-3 col-md-4 col-xl-3 col-12 col-sm-2 myNavbar--reset ">
+                <div class="myNavbar__right">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item business">
+                            <a class="nav-link" aria-current="page" href="#">Udemy for Business</a>
+                            <div class="overlay">
+                                <p>Get your team access to Udemy's top 2,500 courses anytime, anywhere</p>
+                                <a href="#">Try Udemy for Business</a>
+                            </div>
+
+                        <li class="nav-item instructor">
+                            <a class="nav-link" href="#">Become an Instructor</a>
+                            <div class="overlay">
+                                <p>Get your team access to Udemy's top 2,500 courses anytime, anywhere</p>
+                                <a href="#">Try Udemy for Business</a>
+                            </div>
+
+                        <li class="nav-item myNavbar__cart">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-shopping-cart"></i>
+                            </a>
+
+                        <li class="nav-item myNavbar__button">
+                            <button class="button button--white">Log In</button>
+                            <button class="button button--red">Sign Up</button>
+
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <!-- COVER -->
+    <section class="cover">
+        <div class="cover__content">
+            <h1>Learn on your schedule</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, iure!</p>
+            <form class="cover__form">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="What do you want to learn?">
+                    <span class="input-group-text" id="basic-addon2">
+                        <i class="fa fa-search"></i>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- INTRO -->
+    <section class="intro">
+        <div class="intro__content">
+            <div class="row">
+                <div class="col-4">
+                    <div class="intro__item">
+                        <div class="intro__icon">
+                            <i class="fa fa-bullseye"></i>
+                        </div>
+                        <div class="intro__detail">
+                            <p>80,000 online courses</p>
+                            <p>Explore a variety of fresh topic</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="intro__item">
+                        <div class="intro__icon">
+                            <i class="fa fa-spinner"></i>
+                        </div>
+                        <div class="intro__detail">
+                            <p>Expert instruction</p>
+                            <p>Explore a variety of fresh topic</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="intro__item">
+                        <div class="intro__icon">
+                            <i class="fa fa-sync-alt"></i>
+                        </div>
+                        <div class="intro__detail">
+                            <p>Lifetime access</p>
+                            <p>Explore a variety of fresh topic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- COURSE -->
+    <section class="course">
+        <div class="course__content">
+            <div class="row">
+                <div class="col-xl-4 col-md-3 col-12 course__left">
+                    <div>
+                        <h2>The world's largest selection of course</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta repellat minima provident,
+                            officia facilis ea?</p>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-md-9 col-12">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="dev-tab" data-bs-toggle="tab" data-bs-target="#dev"
+                                role="tab">Development</button>
+
+                        <li class="nav-item" role="presentation">
+                            <Design class="nav-link" id="design-tab" data-bs-toggle="tab" data-bs-target="#design"
+                                role="tab">Design</button>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="business-tab" data-bs-toggle="tab" data-bs-target="#business"
+                                role="tab">Business</button>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="it-tab" data-bs-toggle="tab" data-bs-target="#it"
+                                role="tab">IT</button>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal"
+                                role="tab">Personal</button>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="marketing-tab" data-bs-toggle="tab" data-bs-target="#marketing"
+                                role="tab">Marketing</button>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Photography-tab" data-bs-toggle="tab"
+                                data-bs-target="#photography" role="tab">Photography</button>
+
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="dev" role="tabpanel" aria-labelledby="dev-tab">
+                            <div class="owl-carousel owl-theme course__carousel">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./img/kh1.jpg" class="card-img-top" alt="kh1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
+                                            Expert</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                        <div class="card__star">
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-alt"></i>
+                                            </span>
+                                            <span class="card__rate">4.6</span>
+                                            <span class="card__total">(11.597)</span>
+                                        </div>
+                                        <div class="card__price">
+                                            <span>$179.99</span>
+                                            <span>$9.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./img/kh2.jpg" class="card-img-top" alt="kh1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
+                                            Expert</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                        <div class="card__star">
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-alt"></i>
+                                            </span>
+                                            <span class="card__rate">4.6</span>
+                                            <span class="card__total">(11.597)</span>
+                                        </div>
+                                        <div class="card__price">
+                                            <span>$179.99</span>
+                                            <span>$9.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./img/kh3.jpg" class="card-img-top" alt="kh1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
+                                            Expert</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                        <div class="card__star">
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-alt"></i>
+                                            </span>
+                                            <span class="card__rate">4.6</span>
+                                            <span class="card__total">(11.597)</span>
+                                        </div>
+                                        <div class="card__price">
+                                            <span>$179.99</span>
+                                            <span>$9.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./img/kh4.jpg" class="card-img-top" alt="kh1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
+                                            Expert</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                        <div class="card__star">
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-alt"></i>
+                                            </span>
+                                            <span class="card__rate">4.6</span>
+                                            <span class="card__total">(11.597)</span>
+                                        </div>
+                                        <div class="card__price">
+                                            <span>$179.99</span>
+                                            <span>$9.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./img/kh5.jpg" class="card-img-top" alt="kh1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
+                                            Expert</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                        <div class="card__star">
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-alt"></i>
+                                            </span>
+                                            <span class="card__rate">4.6</span>
+                                            <span class="card__total">(11.597)</span>
+                                        </div>
+                                        <div class="card__price">
+                                            <span>$179.99</span>
+                                            <span>$9.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./img/kh6.jpg" class="card-img-top" alt="kh1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
+                                            Expert</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                        <div class="card__star">
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-alt"></i>
+                                            </span>
+                                            <span class="card__rate">4.6</span>
+                                            <span class="card__total">(11.597)</span>
+                                        </div>
+                                        <div class="card__price">
+                                            <span>$179.99</span>
+                                            <span>$9.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="tab-pane fade" id="design" role="tabpanel">2</div>
+                        <div class="tab-pane fade" id="business" role="tabpanel">3</div>
+                        <div class="tab-pane fade" id="it" role="tabpanel">4</div>
+                        <div class="tab-pane fade" id="personal" role="tabpanel">5</div>
+                        <div class="tab-pane fade" id="marketing" role="tabpanel">6</div>
+                        <div class="tab-pane fade" id="photography" role="tabpanel">7</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- VIEWING -->
+    <section class="viewing">
+        <div class="viewing__content">
+            <h2>Students are viewing</h2>
+            <div class="owl-carousel owl-theme viewing__carousel">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/kh1.jpg" class="card-img-top" alt="kh1">
+                    <div class="card-body">
+                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
+                            Expert</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <div class="card__star">
+                            <span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                            </span>
+                            <span class="card__rate">4.6</span>
+                            <span class="card__total">(11.597)</span>
+                        </div>
+                        <div class="card__price">
+                            <span>$179.99</span>
+                            <span>$9.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/kh2.jpg" class="card-img-top" alt="kh1">
+                    <div class="card-body">
+                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
+                            Expert</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <div class="card__star">
+                            <span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                            </span>
+                            <span class="card__rate">4.6</span>
+                            <span class="card__total">(11.597)</span>
+                        </div>
+                        <div class="card__price">
+                            <span>$179.99</span>
+                            <span>$9.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/kh3.jpg" class="card-img-top" alt="kh1">
+                    <div class="card-body">
+                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
+                            Expert</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <div class="card__star">
+                            <span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                            </span>
+                            <span class="card__rate">4.6</span>
+                            <span class="card__total">(11.597)</span>
+                        </div>
+                        <div class="card__price">
+                            <span>$179.99</span>
+                            <span>$9.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/kh4.jpg" class="card-img-top" alt="kh1">
+                    <div class="card-body">
+                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
+                            Expert</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <div class="card__star">
+                            <span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                            </span>
+                            <span class="card__rate">4.6</span>
+                            <span class="card__total">(11.597)</span>
+                        </div>
+                        <div class="card__price">
+                            <span>$179.99</span>
+                            <span>$9.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/kh5.jpg" class="card-img-top" alt="kh1">
+                    <div class="card-body">
+                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
+                            Expert</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <div class="card__star">
+                            <span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                            </span>
+                            <span class="card__rate">4.6</span>
+                            <span class="card__total">(11.597)</span>
+                        </div>
+                        <div class="card__price">
+                            <span>$179.99</span>
+                            <span>$9.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/kh6.jpg" class="card-img-top" alt="kh1">
+                    <div class="card-body">
+                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
+                            Expert</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <div class="card__star">
+                            <span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                            </span>
+                            <span class="card__rate">4.6</span>
+                            <span class="card__total">(11.597)</span>
+                        </div>
+                        <div class="card__price">
+                            <span>$179.99</span>
+                            <span>$9.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/kh2.jpg" class="card-img-top" alt="kh1">
+                    <div class="card-body">
+                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
+                            Expert</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <div class="card__star">
+                            <span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                            </span>
+                            <span class="card__rate">4.6</span>
+                            <span class="card__total">(11.597)</span>
+                        </div>
+                        <div class="card__price">
+                            <span>$179.99</span>
+                            <span>$9.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="banner__content container">
+            <h2>Learn anytime, anywhere</h2>
+            <p>Take courses on any your devices</p>
+            <p>Go at your own pace with Lifetime access</p>
+            <p>Try risk-free with our 30-day money-back guarantee</p>
+            <button class="button--red">Sign Up For Free</button>
+            <div class="row">
+                <div class="col-6 text-end">
+                    <img src="./img/google_btn.png" alt="">
+                </div>
+                <div class="col-6 text-start">
+                    <img src="./img/apple_btn.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CATEGORY -->
+    <section class="category">
+        <div class="category__content">
+            <h2>Top Categories</h2>
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="category__item">
+                        <i class="fa fa-code"></i>
+                        <span>Development</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="category__item">
+                        <i class="fa fa-chart-bar"></i>
+                        <span>Business</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="category__item">
+                        <i class="fa fa-laptop"></i>
+                        <span>IT and Software</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="category__item">
+                        <i class="fa fa-pencil-alt"></i>
+                        <span>Design</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="category__item">
+                        <i class="fa fa-bullseye"></i>
+                        <span>Marketing</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="category__item">
+                        <i class="fa fa-code"></i>
+                        <span>Personal Development</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="category__item">
+                        <i class="fa fa-camera-retro"></i>
+                        <span>Photography</span>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="category__item">
+                        <i class="fa fa-music"></i>
+                        <span>Music</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FEEDBACK -->
+    <section class="feedback">
+        <div class="feedback__content">
+            <h2>What our students have to say</h2>
+            <div class="owl-carousel owl-theme feedback__carousel">
+                <div class="card card--feedback">
+                    <div class="card-body">
+                        <div class="card__top">
+                            <div class="card__avatar">
+                                <img src="./img/s1.jpg" alt="s1">
+                            </div>
+                            <div>
+                                <div class="card__name">Carol</div>
+                                <div class="card__star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quibusdam, quam
+                            blanditiis consequatur sequi ducimus corporis possimus necessitatibus nemo pariatur sit
+                            deserunt totam omnis commodi qui distinctio saepe molestiae dolores magnam beatae sapiente
+                            labore consequuntur! Id cupiditate expedita nihil laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="card card--feedback">
+                    <div class="card-body">
+                        <div class="card__top">
+                            <div class="card__avatar">
+                                <img src="./img/s2.jpg" alt="s1">
+                            </div>
+                            <div>
+                                <div class="card__name">Carol</div>
+                                <div class="card__star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quibusdam, quam
+                            blanditiis consequatur sequi ducimus corporis possimus necessitatibus nemo pariatur sit
+                            deserunt totam omnis commodi qui distinctio saepe molestiae dolores magnam beatae sapiente
+                            labore consequuntur! Id cupiditate expedita nihil laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="card card--feedback">
+                    <div class="card-body">
+                        <div class="card__top">
+                            <div class="card__avatar">
+                                <img src="./img/s3.jpg" alt="s1">
+                            </div>
+                            <div>
+                                <div class="card__name">Carol</div>
+                                <div class="card__star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quibusdam, quam
+                            blanditiis consequatur sequi ducimus corporis possimus necessitatibus nemo pariatur sit
+                            deserunt totam omnis commodi qui distinctio saepe molestiae dolores magnam beatae sapiente
+                            labore consequuntur! Id cupiditate expedita nihil laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="card card--feedback">
+                    <div class="card-body">
+                        <div class="card__top">
+                            <div class="card__avatar">
+                                <img src="./img/s4.jpg" alt="s1">
+                            </div>
+                            <div>
+                                <div class="card__name">Carol</div>
+                                <div class="card__star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quibusdam, quam
+                            blanditiis consequatur sequi ducimus corporis possimus necessitatibus nemo pariatur sit
+                            deserunt totam omnis commodi qui distinctio saepe molestiae dolores magnam beatae sapiente
+                            labore consequuntur! Id cupiditate expedita nihil laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="card card--feedback">
+                    <div class="card-body">
+                        <div class="card__top">
+                            <div class="card__avatar">
+                                <img src="./img/s5.jpg" alt="s1">
+                            </div>
+                            <div>
+                                <div class="card__name">Carol</div>
+                                <div class="card__star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quibusdam, quam
+                            blanditiis consequatur sequi ducimus corporis possimus necessitatibus nemo pariatur sit
+                            deserunt totam omnis commodi qui distinctio saepe molestiae dolores magnam beatae sapiente
+                            labore consequuntur! Id cupiditate expedita nihil laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="card card--feedback">
+                    <div class="card-body">
+                        <div class="card__top">
+                            <div class="card__avatar">
+                                <img src="./img/s6.jpg" alt="s1">
+                            </div>
+                            <div>
+                                <div class="card__name">Carol</div>
+                                <div class="card__star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quibusdam, quam
+                            blanditiis consequatur sequi ducimus corporis possimus necessitatibus nemo pariatur sit
+                            deserunt totam omnis commodi qui distinctio saepe molestiae dolores magnam beatae sapiente
+                            labore consequuntur! Id cupiditate expedita nihil laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PARTNER -->
+    <section class="partner">
+        <div class="partner__content">
+            <div class="partner__text">
+                <p>Trusted by companies all sizes</p>
+            </div>
+            <div class="partner__img">
+                <div class="partner__item">
+                    <img src="./img/booking.svg" alt="">
+                </div>
+                <div class="partner__item">
+                    <img src="./img/volkswagen.svg" alt="">
+                </div>
+                <div class="partner__item">
+                    <img src="./img/mercedes.svg" alt="">
+                </div>
+                <div class="partner__item">
+                    <img src="./img/pinterest.svg" alt="">
+                </div>
+                <div class="partner__item">
+                    <img src="./img/adidas.svg" alt="">
+                </div>
+                <div class="partner__item">
+                    <img src="./img/paypal.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JOB -->
+    <section class="job">
+        <div class="job__content container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-12 border-end">
+                    <div class="job__item">
+                        <h2>Become an Instructor</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci similique vero qui. Libero
+                            quas exercitationem repudiandae repellat eaque dolore aperiam dicta quibusdam laborum
+                            obcaecati cum a consequuntur alias, quidem ullam.</p>
+                        <button class="button--red">Start teeaching today</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="job__item">
+                        <h2>Udemy for Business</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci similique vero qui. Libero
+                            quas exercitationem repudiandae repellat eaque dolore aperiam dicta quibusdam laborum
+                            obcaecati cum a consequuntur alias, quidem ullam.</p>
+                        <button class="button--red">Get Udemy for Business</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer__top">
+            <div class="row">
+                <div class="col-md-9 col-12">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link bold" aria-current="page" href="#">Udemy for Business</a>
+
+                        <li class="nav-item">
+                            <a class="nav-link bold" aria-current="page" href="#">Tech on Udemy</a>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Udemy app</a>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">About us</a>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Careers</a>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Blog</a>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Help and Support</a>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Affiliate</a>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Sitemap</a>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Featured courses</a>
+
+                    </ul>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="btn-group dropup text-md-end">
+                        <button type="button" class="btn button--dropup dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-globe"></i> English
+                        </button>
+                        <ul class="dropdown-menu">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">Espanol</a>
+                            <a class="dropdown-item" href="#">Deutsch</a>
+                            <a class="dropdown-item" href="#">Francais</a>
+                            <a class="dropdown-item" href="#">Bahasa Indonesia</a>
+                            <a class="dropdown-item" href="#">Italiano</a>
+                            <a class="dropdown-item" href="#">Chinese</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer__bottom">
+            <div class="row">
+                <div class="col-md-6 col-12 text-md-start text-center">
+                    <img class="logo-black" src="./img/logo-coral.svg" alt="logo-coral">
+                        <img class="logo-white" src="./img/logo-coral-white.svg" alt="logo-coral">
+
+                    <span>Copyright © 2022 Udemy, Inc</span>
+                </div>
+                <div class="col-md-6 col-12">
+                    <ul class="nav justify-content-md-end justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Terms</a>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Privacy Policy and Cookie Policy</a>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- OWL CAROUSEL -->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.js"
+        integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+    <!-- BS5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <!-- OWL CAROUSEL -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.course__carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 2,
+                    margin: 5
+                },
+                600: {
+                    items: 3,
+                    margin:5
+                },
+                1000: {
+                    items: 4,
+                    margin:5
+                },
+                1450:{
+                    items: 4,
+                    margin: 15
+                }
+            }
+        })
+        $('.viewing__carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 2,
+                    margin: 5
+                },
+                600: {
+                    items: 3,
+                    margin:5
+                },
+                768: {
+                    items: 4,
+                    margin:5
+                },
+                1000: {
+                    items: 6,
+                    margin:5
+                },
+                1450:{
+                    items: 6,
+                    margin: 15
+                }
+            }
+        })
+        $('.feedback__carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                900: {
+                    items: 2
+                },
+                1200: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
